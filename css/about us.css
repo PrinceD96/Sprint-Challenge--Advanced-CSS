@@ -280,8 +280,6 @@ footer {
 }
 .home .walk .contact_us .input-area {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
   margin-bottom: 15px;
 }
 .home .walk .contact_us .btn {
@@ -347,12 +345,20 @@ footer {
   }
   .home .walk .contact_us {
     width: 100%;
-    margin: 5px auto;
+    margin: 15px auto;
   }
   .home .walk .contact_us .input-area {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+  }
+  .home .walk .contact_us .flex-item input {
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 3px;
+  }
+  .home .walk .contact_us .flex-item textarea {
+    width: 100%;
+    border-radius: 5px;
   }
   .home .walk .contact_us .flex-item .btn {
     background: #22283a;

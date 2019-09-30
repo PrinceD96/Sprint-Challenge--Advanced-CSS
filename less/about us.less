@@ -382,10 +382,9 @@ footer {
 
       .input-area {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
         margin-bottom: 15px;
       }
+
       .btn {
         .btn-color(@btn-bg-color, @sea-shell, 1.6rem);
         .btn-size(150px, 35px, 5px);
@@ -463,15 +462,24 @@ footer {
 
       .contact_us {
         width: 100%;
-        margin: 5px auto;
+        margin: 15px auto;
 
         .input-area {
           width: 100%;
-          height: auto;
-          border-radius: 10px;
         }
 
         .flex-item {
+          input {
+            width: 100%;
+            height: 25px;
+            border-radius: 3px;
+            margin-top: 3px;
+          }
+          textarea {
+            width: 100%;
+            border-radius: 5px;
+          }
+
           .btn {
             .btn-color(@btn-bg-color, @sea-shell, 1.6rem);
             .btn-size(100%, 60px, 5px);
