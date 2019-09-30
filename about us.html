@@ -21,16 +21,16 @@
     <!-- navigation code here -->
     <header class="top-header">
       <h1>SpaceWalkers</h1>
-      <nav>
+      <nav id="navbar">
         <a href="index.html">Home</a>
-        <a href="">About Us</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
-        <a href="">Sign In</a>
+        <a class="active" href="javascript:void(0)">About Us</a>
+        <a href="javascript:void(0)">Blog</a>
+        <a href="javascript:void(0)">Contact</a>
+        <a href="javascript:void(0)">Sign In</a>
       </nav>
     </header>
 
-    <div class="container home">
+    <div class="container home content">
       <header class="intro">
         <!-- image code here -->
         <div class="main-header">
@@ -138,5 +138,20 @@
         <p>Copyright SpaceWalkers 2018</p>
       </footer>
     </div>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
   </body>
 </html>

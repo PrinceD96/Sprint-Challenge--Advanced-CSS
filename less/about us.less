@@ -1,4 +1,4 @@
-// Variables
+//Variables
 
 // Color pointers
 @nav-bg: @wild-sand;
@@ -232,6 +232,44 @@ p {
 }
 
 // Navigation code here
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: @nav-bg;
+  .center(@width: 100%, @margin: 0 auto, @max-width: 100vw) {
+    width: @width;
+    margin: @margin;
+    max-width: @max-width;
+  }
+
+  a {
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    &.active {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      // background-color: darkgrey;
+      color: white;
+    }
+  }
+}
+//above code is experimental
+
 .top-header {
   width: 100%;
   margin: 0 auto;
@@ -247,7 +285,7 @@ p {
 
   nav {
     // border: 1px solid blue;
-    max-width: 800px;
+    // max-width: 800px;
     width: 100%;
     margin: 0 auto;
     display: flex;
