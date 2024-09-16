@@ -1,6 +1,6 @@
 // Footer Styles
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -8,4 +8,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@phone: (max-width: 500px);
+@media @phone {
+  footer {
+    // border: 1px solid red;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 98vw;
+  }
 }
